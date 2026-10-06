@@ -1,0 +1,6 @@
+opencv-python
+# Pinned: mediapipe>=0.10.31 has a known bug where `mediapipe.solutions`
+# is missing on some environments (AttributeError). 0.10.14 is stable.
+mediapipe==0.10.14
+numpy
+pygame
