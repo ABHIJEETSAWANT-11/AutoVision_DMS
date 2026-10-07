@@ -10,10 +10,6 @@ import pygame
 
 import config
 
-
-
-
-
 class AlarmManager:
     """Plays state-appropriate audio alerts with a cooldown between plays."""
 
