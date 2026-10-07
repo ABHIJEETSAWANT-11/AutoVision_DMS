@@ -12,6 +12,7 @@ main loop, cv2.imshow, and cv2.waitKey. Every other module is a pure,
 reusable processing component with no camera or display responsibility.
 
 Run with:
+
     python main.py
 Press 'q' to quit.
 """
