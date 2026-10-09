@@ -2,26 +2,20 @@
 main.py
 ---------
 Entry point for the Automotive Driver Monitoring System (DMS).
-
 Orchestrates: camera capture -> face mesh detection -> EAR/MAR/head-pose
 signal extraction -> fatigue state machine -> alerts + logging ->
 dashboard display.
-
 This is the ONLY file in the project that owns cv2.VideoCapture, the
 main loop, cv2.imshow, and cv2.waitKey. Every other module is a pure,
 reusable processing component with no camera or display responsibility.
-
 Run with:
-
     python main.py
 Press 'q' to quit.
 """
 
 import sys
 import time
-
 import cv2
-
 import config
 from detection.face_mesh import FaceMeshDetector
 from detection.eye_detection import calculate_ear
